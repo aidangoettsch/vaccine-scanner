@@ -3,7 +3,7 @@ import chalk from "chalk";
 import dotenv from "dotenv"
 import {MessageEmbed, WebhookClient} from "discord.js";
 import {safewayMd} from "./sites/albertsons";
-import {cvs} from "./sites/cvsMd";
+import {cvs} from "./sites/cvs";
 import {harrisTeeterMoco} from "./sites/kroger";
 import {walgreensMoco} from "./sites/walgreens";
 
