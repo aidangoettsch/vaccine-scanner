@@ -6,6 +6,7 @@ import {safewayMd} from "./sites/albertsons";
 import {cvs} from "./sites/cvs";
 import {harrisTeeterMoco} from "./sites/kroger";
 import {walgreensMoco} from "./sites/walgreens";
+import { walmartMoco } from "./sites/walmart";
 
 dotenv.config()
 
@@ -32,6 +33,7 @@ const sites: Site[] = [
   cvs,
   harrisTeeterMoco,
   // walgreensMoco,
+  walmartMoco
 ]
 
 if (!process.env.WEBHOOK_ID || !process.env.WEBHOOK_TOKEN) throw("Environment not configured");
@@ -53,7 +55,7 @@ async function execute(site: Site) {
       const embed = new MessageEmbed()
         .setColor('#0099ff')
         .setTitle(`New availability for ${site.displayName}`)
-        .setDescription(res.message)
+        .setDescription(res.message?.slice(0, 2048))
 
       await webhookClient.send(embed)
     }
