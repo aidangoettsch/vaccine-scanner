@@ -79,7 +79,7 @@ async function getAuth(): Promise<WalmartAuth> {
 
 export const walmartMoco: Site = {
   displayName: "Walmart Moco",
-  interval: 300000000,
+  interval: 60 * 1000,
   lastAppointments: [],
   async scanner(): Promise<ScanResult> {
     if (!this.auth) this.auth = await getAuth()
