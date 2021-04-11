@@ -1,0 +1,5 @@
+services:
+  vaccine-scanner:
+    build: .
+    container_name: vaccine-scanner
+    restart: unless-stopped
