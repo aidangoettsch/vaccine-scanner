@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@cliqz/adblocker-playwright": "^1.20.4",
+    "@extra/humanize": "^4.2.2-next.616",
     "@types/luxon": "^1.26.3",
     "chalk": "^4.1.0",
     "discord.js": "^12.5.3",
@@ -19,7 +21,8 @@
     "luxon": "^1.26.0",
     "node-fetch": "^2.6.1",
     "node-libcurl": "^2.3.2",
-    "playwright": "^1.10.0"
+    "playwright": "^1.10.0",
+    "playwright-extra": "^4.2.1-next.616"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",

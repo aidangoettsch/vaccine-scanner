@@ -31,7 +31,7 @@ const sites: Site[] = [
   safewayMd,
   cvs,
   harrisTeeterMoco,
-  walgreensMoco,
+  // walgreensMoco,
 ]
 
 if (!process.env.WEBHOOK_ID || !process.env.WEBHOOK_TOKEN) throw("Environment not configured");
@@ -55,7 +55,7 @@ async function execute(site: Site) {
         .setTitle(`New availability for ${site.displayName}`)
         .setDescription(res.message)
 
-      // await webhookClient.send(embed)
+      await webhookClient.send(embed)
     }
   } catch (e) {
     console.error(`[${new Date().toISOString()}][${site.displayName}][ERROR] ${chalk.red(e.stack)}`)
