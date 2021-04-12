@@ -43,6 +43,8 @@ interface KrogerPharmacy {
 
 export const harrisTeeterMoco: Site = {
   displayName: "Harris Teeter Moco",
+  color: '#007647',
+  thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Harris_Teeter_logo.svg/320px-Harris_Teeter_logo.svg.png',
   interval: 30000,
   lastAppointments: [],
   async scanner(): Promise<ScanResult> {

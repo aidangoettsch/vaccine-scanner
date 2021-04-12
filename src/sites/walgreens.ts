@@ -5,8 +5,6 @@ import {firefox} from "playwright";
 import { PlaywrightBlocker } from '@cliqz/adblocker-playwright'
 import {DateTime} from "luxon";
 import * as util from "util";
-import * as fs from "fs";
-import path from "path";
 
 interface WalgreensLoggedInAuth {
   cookies: string,
@@ -209,6 +207,8 @@ async function getAuth(): Promise<WalgreensAuth> {
 export const walgreensMoco: Site = {
   displayName: "Walgreens Moco",
   interval: 3600000,
+  color: '#e41133',
+  thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Walgreens_Logo.svg/320px-Walgreens_Logo.svg.png',
   lastAppointments: [],
   async fetchTimeslots(productId: string, tomorrow: DateTime): Promise<WalgreensStore[]> {
     if (!this.loggedInAuth) this.loggedInAuth = await getLoggedInAuth()
