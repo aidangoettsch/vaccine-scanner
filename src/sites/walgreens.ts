@@ -230,10 +230,10 @@ export const walgreensMoco: Site = {
     const postFields = JSON.stringify({
       serviceId: "99",
       position: {
-        latitude: 38.5976262,
-        longitude: -80.4549026,
+        latitude: 39.186097,
+        longitude: -77.20027449999999,
       },
-      state: "WV",
+      state: "MD",
       vaccine: {
         productId
       },
@@ -278,8 +278,8 @@ export const walgreensMoco: Site = {
       postFields: JSON.stringify({
         serviceId: "99",
         position: {
-          latitude: 38.5976262,
-          longitude: -80.4549026,
+          latitude: 39.186097,
+          longitude: -77.20027449999999,
         },
         appointmentAvailability: {
           startDateTime: tomorrow.toISODate(),
