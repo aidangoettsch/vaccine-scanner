@@ -3,7 +3,7 @@ import chalk from "chalk";
 import dotenv from "dotenv"
 import {ColorResolvable, MessageEmbed, WebhookClient} from "discord.js";
 import {safewayMd} from "./sites/albertsons";
-import {cvs} from "./sites/cvs";
+import {cvsMd} from "./sites/cvs";
 import {harrisTeeterMoco} from "./sites/kroger";
 import {walgreensMoco} from "./sites/walgreens";
 import { walmartMoco } from "./sites/walmart";
@@ -32,18 +32,11 @@ export interface Site {
 }
 
 const sites: Site[] = [
-<<<<<<< HEAD
-  // safewayMd,
-  // cvs,
-  // harrisTeeterMoco,
   walgreensMoco,
-=======
   safewayMd,
-  cvs,
+  cvsMd,
   harrisTeeterMoco,
-  // walgreensMoco,
   walmartMoco
->>>>>>> f8701275f9bbb473ca66a3cd1fde615c311869b2
 ]
 
 if (!process.env.WEBHOOK_ID || !process.env.WEBHOOK_TOKEN) throw("Environment not configured");
