@@ -1,7 +1,6 @@
-FROM node:15-alpine
+FROM mcr.microsoft.com/playwright:bionic
 WORKDIR /app
 
-RUN apk add python make gcc g++
 RUN npm i -g pnpm
 COPY package.json ./
 COPY pnpm-lock.yaml ./

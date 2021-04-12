@@ -4,12 +4,11 @@ import dotenv from "dotenv"
 import Discord from "discord.js"
 import {
   ColorResolvable,
-  DiscordAPIError,
   MessageEmbed,
   WebhookClient,
 } from "discord.js"
 import { safewayMd } from "./sites/albertsons"
-import { cvs } from "./sites/cvs"
+import { cvsMd } from "./sites/cvs"
 import { harrisTeeterMoco } from "./sites/kroger"
 import { walgreensMoco } from "./sites/walgreens"
 import { walmartMoco } from "./sites/walmart"
@@ -38,8 +37,9 @@ export interface Site {
 }
 
 const sites: Site[] = [
+  walgreensMoco,
   safewayMd,
-  cvs,
+  cvsMd,
   harrisTeeterMoco,
   walgreensMoco,
   walmartMoco,

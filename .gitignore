@@ -1,5 +1,6 @@
 node_modules/
 .env
 bin/
-
+data/
+.vscode/
 .pnpm-debug.log

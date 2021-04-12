@@ -7,7 +7,7 @@ interface CVSPharmacy {
   status: string,
 }
 
-export const cvs: Site = {
+export const cvsMd: Site = {
   displayName: "CVS Maryland",
   color: '#cd0000',
   thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/CVS_Health_Logo.svg/320px-CVS_Health_Logo.svg.png',
