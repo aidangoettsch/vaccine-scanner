@@ -62,7 +62,7 @@ async function execute(site: Site) {
         .setDescription(res.message?.slice(0, 2048))
         .setFooter(`${DateTime.now().toLocaleString(DateTime.DATETIME_FULL)}`, 'https://cdn.discordapp.com/avatars/161566417018159104/c0e236f34cf194621b8cf03b4fdf20a4.png?size=128')
 
-      // await webhookClient.send(embed)
+      await webhookClient.send(embed)
     }
   } catch (e) {
     console.error(`[${new Date().toISOString()}][${site.displayName}][ERROR] ${chalk.red(e.stack)}`)
