@@ -14,7 +14,7 @@ interface AlbertsonsPharmacy {
 
 export const safewayMd: Site = {
   displayName: "Safeway Maryland (Albertsons)",
-  interval: 30000,
+  interval: 10000,
   lastStores: [],
   async scanner(): Promise<ScanResult> {
     const res = await fetch("https://s3-us-west-2.amazonaws.com/mhc.cdn.content/vaccineAvailability.json")

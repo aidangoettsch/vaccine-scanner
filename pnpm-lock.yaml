@@ -76,6 +76,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-pw/aBIX1Jn5muY6HvS4BwimNxG5KQaty27DNEqto8DPvOJQncrqi2MCPu7OYxSH6nDN/8O4Zq7zHOAGTItYx0w==
+      tarball: '@extra/humanize/-/humanize-4.2.2-next.616.tgz'
   /@remusao/guess-url-type/1.2.1:
     dev: false
     resolution:
@@ -259,6 +260,7 @@ packages:
       node: '>=12'
     resolution:
       integrity: sha512-KwEM1GxITOKqDFElnoEbgWOLNl+IITstAJ2KZGAuCmcS09fjPQ1mG7uS31Za8BgaLwqdq1pQc/RShXdJLmH3AQ==
+      tarball: automation-extra-plugin/-/automation-extra-plugin-4.2.2-next.616.tgz
   /automation-extra/4.2.1-next.616:
     dependencies:
       '@types/debug': 4.1.5
@@ -273,6 +275,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-D1gYD2sWhelQXZr9BHO1G7EFxB+ncKDQ4Ea2yoSwbv+Q0ExmreNGmYHW3g3eDQZs2YphpKnbtkMTXR+wDXWbiA==
+      tarball: automation-extra/-/automation-extra-4.2.1-next.616.tgz
   /aws-sign2/0.7.0:
     dev: false
     resolution:
@@ -1131,6 +1134,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-NFxCvLSOkyXByFUfff0b4hwWRmHDTNB7YhUhXckWR2ct9p1OyvBZrHQfesv8eq43iAqNwALWulOGDtKxPvrTlA==
+      tarball: playwright-extra/-/playwright-extra-4.2.1-next.616.tgz
   /playwright/1.10.0:
     dependencies:
       commander: 6.2.1

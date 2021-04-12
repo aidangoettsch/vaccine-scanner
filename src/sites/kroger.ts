@@ -68,7 +68,7 @@ export const harrisTeeterMoco: Site = {
     const data: KrogerPharmacy[] = await res.json()
     const appointments = []
 
-    for (const store of data) {
+    for (const store of data.filter(s => s.facilityDetails.address.state === "MD" && s.facilityDetails.vanityName != "Park Potomac")) {
       for (const day of store.dates) {
         for (const slot of day.slots) {
           appointments.push(`${store.facilityDetails.vanityName} ${day.date} ${slot.start_time} ${slot.ar_reason}`)
