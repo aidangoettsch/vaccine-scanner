@@ -17,6 +17,7 @@ specifiers:
   node-libcurl: ^2.3.2
   playwright: ^1.10.0
   playwright-extra: ^4.2.1-next.616
+  prettier: ^2.2.1
   tough-cookie: ^4.0.0
   typescript: ^4.2.4
 
@@ -40,6 +41,7 @@ devDependencies:
   '@types/node': 14.14.37
   '@types/node-fetch': 2.5.10
   '@types/ws': 7.4.1
+  prettier: 2.2.1
   typescript: 4.2.4
 
 packages:
@@ -1143,6 +1145,12 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
     dev: false
+
+  /prettier/2.2.1:
+    resolution: {integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /prism-media/1.2.9:
     resolution: {integrity: sha512-UHCYuqHipbTR1ZsXr5eg4JUmHER8Ss4YEb9Azn+9zzJ7/jlTtD1h0lc4g6tNx3eMlB8Mp6bfll0LPMAV4R6r3Q==}
