@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node bin/index.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pretty-quick": "pretty-quick"
   },
   "author": "",
   "license": "ISC",
