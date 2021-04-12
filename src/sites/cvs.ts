@@ -9,6 +9,8 @@ interface CVSPharmacy {
 
 export const cvs: Site = {
   displayName: "CVS Maryland",
+  color: '#cd0000',
+  thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/CVS_Health_Logo.svg/320px-CVS_Health_Logo.svg.png',
   interval: 30000,
   lastStores: [],
   async scanner(): Promise<ScanResult> {

@@ -79,6 +79,8 @@ async function getAuth(): Promise<WalmartAuth> {
 
 export const walmartMoco: Site = {
   displayName: "Walmart Moco",
+  color: '#ffc220',
+  thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/320px-Walmart_logo.svg.png',
   interval: 60 * 1000,
   lastAppointments: [],
   async scanner(): Promise<ScanResult> {

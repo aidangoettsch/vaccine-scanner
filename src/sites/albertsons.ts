@@ -14,6 +14,8 @@ interface AlbertsonsPharmacy {
 
 export const safewayMd: Site = {
   displayName: "Safeway Maryland (Albertsons)",
+  color: '#d71e25',
+  thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Safeway_Logo.svg/320px-Safeway_Logo.svg.png',
   interval: 30000,
   lastStores: [],
   async scanner(): Promise<ScanResult> {

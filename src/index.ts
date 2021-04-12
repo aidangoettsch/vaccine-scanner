@@ -1,12 +1,13 @@
 import fetch from "node-fetch"
 import chalk from "chalk";
 import dotenv from "dotenv"
-import {MessageEmbed, WebhookClient} from "discord.js";
+import {ColorResolvable, MessageEmbed, WebhookClient} from "discord.js";
 import {safewayMd} from "./sites/albertsons";
 import {cvs} from "./sites/cvs";
 import {harrisTeeterMoco} from "./sites/kroger";
 import {walgreensMoco} from "./sites/walgreens";
 import { walmartMoco } from "./sites/walmart";
+import { DateTime } from "luxon";
 
 dotenv.config()
 
@@ -23,7 +24,9 @@ export interface ScanResult {
 
 export interface Site {
   displayName: string,
-  interval: number
+  color: ColorResolvable,
+  thumbnail: string,
+  interval: number,
   scanner: () => Promise<ScanResult>,
   [instanceData: string]: any,
 }
@@ -53,9 +56,11 @@ async function execute(site: Site) {
 
     if (res.outcome === ScanOutcome.NEW_AVAILABLE) {
       const embed = new MessageEmbed()
-        .setColor('#0099ff')
+        .setColor(site.color)
+        .setThumbnail(site.thumbnail)
         .setTitle(`New availability for ${site.displayName}`)
         .setDescription(res.message?.slice(0, 2048))
+        .setFooter(`${DateTime.now().toLocaleString(DateTime.DATETIME_FULL)}`, 'https://cdn.discordapp.com/avatars/161566417018159104/c0e236f34cf194621b8cf03b4fdf20a4.png?size=128')
 
       await webhookClient.send(embed)
     }
