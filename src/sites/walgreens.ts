@@ -60,7 +60,7 @@ interface WalgreensStore {
 
 async function getLoggedInAuth(): Promise<WalgreensLoggedInAuth> {
   const browser = await firefox.launch( {
-    headless: false,
+    headless: true,
     firefoxUserPrefs: {
       "general.appversion.override":
         "5.0 (Macintosh; Intel Mac OS X 10.15; rv:87.0) Gecko/20100101 Firefox/87.0",
@@ -159,7 +159,7 @@ async function getLoggedInAuth(): Promise<WalgreensLoggedInAuth> {
 
 async function getAuth(): Promise<WalgreensAuth> {
   const browser = await firefox.launch( {
-    headless: false,
+    headless: true,
     firefoxUserPrefs: {
       "general.appversion.override":
         "5.0 (Macintosh; Intel Mac OS X 10.15; rv:87.0) Gecko/20100101 Firefox/87.0",
