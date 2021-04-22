@@ -206,7 +206,7 @@ async function getAuth(): Promise<WalgreensAuth> {
 
 export const walgreensMoco: Site = {
   displayName: "Walgreens Moco",
-  interval: 3600000,
+  interval: 5 * 60 * 1000,
   color: '#e41133',
   thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Walgreens_Logo.svg/320px-Walgreens_Logo.svg.png',
   lastAppointments: [],

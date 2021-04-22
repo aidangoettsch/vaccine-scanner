@@ -40,8 +40,7 @@ const sites: Site[] = [
   walgreensMoco,
   safewayMd,
   cvsMd,
-  harrisTeeterMoco,
-  walgreensMoco,
+  // harrisTeeterMoco,
   walmartMoco,
 ]
 
